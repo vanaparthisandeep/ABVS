@@ -1,0 +1,286 @@
+body{
+
+    background-size: auto;
+    background-color: darkgray;
+    height: 100%;
+    margin-left: 0.1cm;
+    margin-right: 0.1cm;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.heading{
+    text-align: center;
+    color:#bb205f;
+    margin-top: 0.2cm;
+    font-family:Algerian,sans-serif;
+    text-blink: 10cm;
+}
+img {
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 0.1%;
+    box-shadow: 1px 1px 25px black;
+}
+
+ul {
+    list-style-type: none;
+    margin:1px;
+    padding: 2px;
+    overflow: hidden;
+    background-color: black;
+    border-radius: 4px;
+    box-shadow: 0 0 15px white;
+    align-self: center;
+    margin-top:0;
+
+
+}
+
+li {
+  float: left;
+
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 4px;
+    align-content: center;
+
+
+}
+
+li a:hover:not(.active) {
+    background-color: #2b9;
+    border-radius: 4px;
+    color: black;
+    box-shadow: 0 0 15px white;
+}
+
+.active {
+    background-color: #2b9;
+    color: black;
+    border-radius: 4px;
+    box-shadow: 0 0 15px white;
+    }
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+    color: #1ab188;
+    transition: .5s ease;
+}
+a:hover {
+    color: white;
+}
+
+.form {
+    background: rgba(19, 35, 47, 0.9);
+    padding: 15px;
+    max-width: 398px;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 0 0 15px red;
+}
+
+.tab-group {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+.tab-group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.tab-group li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    background: rgba(160, 179, 176, 0.25);
+    color: #a0b3b0;
+    font-size: 20px;
+    float: left;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.tab-group li a:hover {
+    background: #179b77;
+    color: #ffffff;
+}
+.tab-group .active a {
+    background: #1ab188;
+    color: #ffffff;
+}
+
+.tab-content > div:last-child {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    color: wheat;
+    font-weight: 300;
+    margin: 21px 0 40px;
+}
+
+label {
+    position: absolute;
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+    left: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 0.25s ease;
+    -webkit-backface-visibility: hidden;
+    pointer-events: none;
+    font-size: 22px;
+}
+label .req {
+    margin: 2px;
+    color: red;
+}
+.req{
+    color: red;
+}
+
+label.active {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    left: 2px;
+    font-size: 14px;
+}
+
+
+label.highlight {
+    color: #ffffff;
+}
+
+input, textarea,select {
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    background: none;
+
+    border: 1px solid #a0b3b0;
+    color: #ffffff;
+    border-radius: 0;
+    transition: border-color .25s ease, box-shadow .25s ease;
+   }
+input:focus, textarea:focus, select:focus {
+    outline: 0;
+    border-color: lightcoral;
+    background-color: rgb(2,48,74);
+}
+
+
+
+
+
+
+
+textarea {
+    border: 2px solid #a0b3b0;
+    resize: vertical;
+}
+
+.field-wrap {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.top-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.top-row > div {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+.top-row > div:last-child {
+    margin: 0;
+}
+
+.button {
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    padding: 5px;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    background: #1ab188;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    -webkit-appearance: none;
+}
+.button:hover, .button:focus {
+    background: #179b77;
+    box-shadow: 0 0 15px lightcoral;
+}
+
+.button-block {
+    display: block;
+    width: 100%;
+}
+
+.welcome{
+    text-align: center;
+    font-family: Algerian,sans-serif;
+    font-size: 50px;
+    color: #f92;
+    margin-top: 8cm;
+
+}
+table, td, th {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th {
+    height: 50px;
+}
+tr{
+    font-family: Andalus,sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+.field-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: -13px;
+    position: relative;
+    z-index: 2;
+    color:white;
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(95,95,95);
+    color: white;
+    text-align: center;
+    box-shadow: 0 0 15px green;
+    margin-left: 0.1cm;
+
+   }
+/*THIS IS ANOTHER PART*/
+
+
